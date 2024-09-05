@@ -13,7 +13,7 @@ return 0;
 #include<stdio.h>
 int main(){
   int a , b , sum; //declare variable
-  printf("Enter first number:");
+  printf("Enter first number");
   scanf("%d" , &a );
   printf("Enter second number:");
   scanf("%d" , &b );
