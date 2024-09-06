@@ -72,9 +72,26 @@ int main(){
   int n; //enter number
   printf("Enter a number :");
   scanf("%d",&n);
-  if(n>0) printf("%d is greater than 0. \n",n);
-  else if(n>100) printf("%d is greater than 100. \n",n);
-  else if(n>1000) printf("%d is greater than 1000. \n",n);
-  else printf("not a number");
+  
+  if(n > 0 && n <= 100) 
+      printf("%d is greater than 0 and less than or equal to 100.\n",n);
+  else if(n > 100 && n <= 1000) 
+      printf("%d is greater than 100 and less than or equal to 1000.\n",n);
+  else if(n > 1000) 
+      printf("%d is greater than 1000.\n",n);
+  else{
+     printf("Please enter a valid number.\n");
+  }
+
   return 0;
+}
+
+//character user input
+#include<stdio.h>
+int main() {
+    char a;  // Variable to store a single character
+    printf("Enter character name: ");
+    scanf(" %c", &a);  // Notice the space before %c to handle the newline
+    printf("Entered character is: %c\n", a);  // Print the character
+    return 0;
 }
