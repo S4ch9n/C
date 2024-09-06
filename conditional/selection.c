@@ -65,3 +65,16 @@ int main() {
     }
     return 0;
 }
+
+//number is greater
+#include<stdio.h>
+int main(){
+  int n; //enter number
+  printf("Enter a number :");
+  scanf("%d",&n);
+  if(n>0) printf("%d is greater than 0. \n",n);
+  else if(n>100) printf("%d is greater than 100. \n",n);
+  else if(n>1000) printf("%d is greater than 1000. \n",n);
+  else printf("not a number");
+  return 0;
+}
