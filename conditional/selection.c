@@ -194,23 +194,23 @@ int main(){
 #include<stdio.h>
 int main(){
   int a,b,c;
-  printf("enter first number");
+  printf("enter first number : ");
   scanf("%d",&a);
-   printf("enter second number");
+   printf("enter second number : ");
   scanf("%d",&b);
-   printf("enter third number");
+   printf("enter third number : ");
   scanf("%d",&c);
   if(a > b){
     if(a > c){
-      printf("a is greatest among three");
+      printf("first is greatest among three");
     }else{
-      printf("c is greatest among three");
+      printf("third is greatest among three");
     }
   }
   else if(b > c){
-    printf(" b is greatest among three");
+    printf(" second is greatest among three");
   }else{
-      printf("c is greatest among three");
+      printf("third is greatest among three");
   }
   return 0;
 }
