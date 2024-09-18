@@ -22,6 +22,22 @@ int main(){
   return 0;
 }
 
+//right-half triangle print alphabets
+#include<stdio.h>
+int main(){
+  int n;
+  printf("enter a number : ");
+  scanf("%d",&n);
+  char a = 'A';
+  for(int i = 0 ; i <= n ; i++){
+    for(int j = 1 ; j <= i ; j++){
+      printf("%c",a++);
+    }
+    printf("\n");
+  }
+  return 0;
+}
+
 //inverted Right Half Pyramid Pattern in C
 #include<stdio.h>
 int main(){
@@ -33,6 +49,7 @@ int main(){
   }
   return 0;
 }
+
 
 
 
