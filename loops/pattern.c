@@ -62,8 +62,7 @@ int main()
   return 0;
 }
 
-// left half triangle
-//  Online C compiler to run C program online
+// left half triangles
 #include <stdio.h>
 int main()
 {
