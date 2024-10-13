@@ -108,3 +108,19 @@ int main() {
     }
     return 0;
 }
+
+//declare an array of 10 elements and write the condition , where you only gave to fetch 5 elements and also take input from user .
+#include <stdio.h>
+int main(){
+    int arr[60];
+    for(int i = 0 ; i < 10 ; i++){
+            printf("number : ");
+            scanf("%d",&arr[i]);
+    }
+      for(int i = 0 ; i < 10 ; i++){
+          if(arr[i] < arr[5]){
+               printf("%d",arr[i]);
+          }
+    }
+   return 0;
+}
