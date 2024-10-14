@@ -118,9 +118,7 @@ int main(){
             scanf("%d",&arr[i]);
     }
       for(int i = 0 ; i < 10 ; i++){
-          if(arr[i] < arr[5]){
                printf("%d",arr[i]);
-          }
     }
    return 0;
 }
