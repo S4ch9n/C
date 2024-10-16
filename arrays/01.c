@@ -122,3 +122,92 @@ int main(){
     }
    return 0;
 }
+
+// //write a program to read two arrays arrays of size 10 and store sum of theses arrays in 3rd arrays.
+#include<stdio.h>
+int main(){
+    int a1[10] , a2[10] ,a3[10];
+    for(int i = 0 ; i < 10 ; i++){
+        printf("enter numbers for 1st arryas : ");
+        scanf("%d",&a1[i]);
+    }
+    //printing the value of 1st arrays
+    printf("stored elements in first arrays are : ");
+    for(int i = 0 ; i < 10 ; i++){
+         printf("%d ",a1[i]);
+    }
+      printf("\n");
+      //taking input for 2nd array
+    for(int i = 0 ; i<  10 ; i++){
+        printf("Enter eleemnts for  2nd arryas : ");
+        scanf("%d",&a2[i]);
+    }
+    printf("stored elements in first arrays are : ");
+    for(int i = 0 ; i < 10 ; i++){
+         printf("%d ",a2[i]);
+    }
+    printf("\n");
+    //now adding these in third arrays
+    for(int i = 0 ; i < 10 ; i++){
+        a3[i] = a1[i] + a2[i];
+    }
+    printf("the sum of first and 2nd  arrays in third arrays are : ");
+    for(int i = 0 ; i < 10 ; i++){
+        printf("%d ",a3[i]);
+    }
+}
+//write a program to read marks of 10 students and also calculate the sum and average using arrays
+#include<stdio.h>
+int main(){
+    int arr[10],sum = 0,average;
+    for(int i = 0 ; i < 10 ; i++){
+        printf("enter a number : ");
+        scanf("%d",&arr[i]);
+    }
+    printf("elements in arrays are : ");
+    for(int i = 0 ; i < 10 ; i++){
+        printf("%d , ",arr[i]);
+    }
+    //sum
+    for(int i = 0 ; i < 10 ; i++){
+        sum += arr[i];
+    }
+    printf("\n");
+    printf("sum of these elements are : ");
+    printf("%d" , sum);
+     printf("\n");
+    printf("average is : ");
+    average = sum / 10;
+    printf("%d" , average);
+}
+
+//write a program to read an array of 10 integers and count total number of even and  odd elements.
+#include<stdio.h>
+int main(){
+    int arr[10],even = 0 , odd = 0;
+    for(int i = 0 ; i < 10 ; i++){
+        printf("enter elements for arrays : ");
+        scanf("%d",&arr[i]);
+    }
+     printf("enter element in arrays is : ");
+    for(int i = 0 ; i < 10 ; i++){
+        printf("%d ",arr[i]);
+    }
+      printf("\n");
+    for(int i =  0 ; i < 10 ; i++){
+        if(arr[i] % 2 == 0){
+            printf("%d is even \n",arr[i]);
+            even++ ;
+        }
+        else{
+            printf("%d is odd \n",arr[i]);
+            odd++ ;
+        }
+    }
+    printf("total odd is :  %d " ,odd);
+    printf("\n");
+    printf("total even is :  %d ", even);
+}
+
+   
+
