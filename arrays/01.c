@@ -139,7 +139,7 @@ int main(){
       printf("\n");
       //taking input for 2nd array
     for(int i = 0 ; i<  10 ; i++){
-        printf("Enter eleemnts for  2nd arryas : ");
+        printf("Enter elements for  2nd arrays : ");
         scanf("%d",&a2[i]);
     }
     printf("stored elements in first arrays are : ");
