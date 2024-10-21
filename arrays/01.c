@@ -209,5 +209,18 @@ int main(){
     printf("total even is :  %d ", even);
 }
 
+//printing the array elements with index numbers
+#include<stdio.h>
+int main(){
+    int arr[5];
+    for(int i = 0 ; i < 5 ; i++){
+        scanf("%d",arr[i]);
+    }
+      for(int i = 0 ; i < 5 ; i++){
+        printf("elements present in index %d is %d " , i , arr[i]);
+    }
+    return 0;
+}
+
    
 
