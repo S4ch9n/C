@@ -24,3 +24,4 @@ void main() {
     printf("b is : %c \n", u.b);  // Accessing 'b' (interpreting memory as char)
     printf("c is : %f \n", u.c);  // Accessing 'c' (interpreting memory as float)
 }
+
