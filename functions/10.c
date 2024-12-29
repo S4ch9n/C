@@ -12,22 +12,28 @@ int main(){
   printf("sqr of %d is %d ",num,n);
 }
 
-//Write a program in C to swap two numbers using a function.
+//Write a program in C to swap two numbers using a function by call by reference.
 #include <stdio.h>
-int swap(int n , int n2){
-  int temp = 0;
-  temp = n;
-  n = n2;
-  n2 = temp;
-  return n ,n2;
+
+void swap(int *n1, int *n2) {
+    int temp = *n1;
+    *n1 = *n2;
+    *n2 = temp;
 }
-int main(){
-  int a , b;
-  printf("enter first number : ");
-  scanf("%d",&a);
-  printf("enter second number : ");
-  scanf("%d",&b);
-  printf("before swapping the value of a is : %d and b is %d ",a,b);
-  swap(a,b);
-  printf("after swapping the value of a is : %d and b is %d ",a,b);
+
+int main() {
+    int a, b;
+    printf("Enter first number: ");
+    scanf("%d", &a);
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    printf("Before swapping, the value of a is: %d and b is: %d\n", a, b);
+
+    // Pass the addresses of a and b to the swap function
+    swap(&a, &b);
+
+    printf("After swapping, the value of a is: %d and b is: %d\n", a, b);
+
+    return 0;
 }
