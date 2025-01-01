@@ -1,3 +1,4 @@
+//A non-tail-recursive function is one where there are operations to be performed after the recursive call returns.
 #include<stdio.h>
 void ntail(int a){
   if(a < 1) return;
